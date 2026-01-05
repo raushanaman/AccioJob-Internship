@@ -3,98 +3,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        *{
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Poppins', sans-serif;
-        }
-        nav{
-            width: 100%;
-            background: #fff;
-            box-shadow: 0 5px 10px rgba(0,0,0,0.1);
-            padding: 10px 20px;
-        }
-         nav .image{
-            display: flex;
-            align-items: center;
-            gap: 10px;
-         }
-            nav .image img{
-                width: 266px;
-                height: 66px;
-                object-fit: cover;
-            }
-            nav #blog{
-                width: 66px;
-                height: 26px;
-            }
-         .nav-head{
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }     
-        .right-head{
-            display: flex;
-            align-items: center;
-            gap: 12px;
-        }   
-        .right-head .button button{
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            height: 36px;
-            padding: 0 12px;
-            border: none;
-            background: transparent;
-            border-radius: 6px;
-            cursor: pointer;
-            color: #020e1b;
-        }
-        .right-head .button button .btn-icon{
-            height: 18px; /* small icon height */
-            width: auto;
-            display:block;
-            color: #007bff; /* blue icon color via currentColor */
-            flex-shrink: 0;
-        }
-        .right-head .button button svg{
-            stroke-width:1.5;
-        }
-        .right-head .quote-btn{
-            padding: 10px 16px;
-            background: #020e1b;
-            color: #fff;
-            border: none;
-            border-radius: 15px;
-            cursor: pointer;
-        }    
-        </style>
+    <title>Otarea.in</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <nav>
-        <div class="nav-head">
-            <div class="image">
-                 <img src="logo.png" alt="logo"> <span id="blog">Blog</span>
+    <!-- Header -->
+    <header class="header">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="logo.png" alt="Otarea" class="logo-img">
+                <!-- <span class="logo-text">Otarea.in</span> -->
+                <span class="beta-tag">| Blog</span>
             </div>
-            <div class="right-head">
-                <div class="button">
-                    <button type="button">
-                        <!-- archive icon -->
-                        <svg class="btn-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="3" y="3" width="18" height="6"/><path d="M21 9v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V9"/><path d="M10 13h4"/></svg>
-                        Archive
-                    </button>
-                    <button type="button">
-                        <!-- store icon -->
-                        <svg class="btn-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M3 9h18v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V9z"/><path d="M7 9V5a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1v4"/></svg>
-                        Store
-                    </button>
-                </div>
+            <nav class="nav-menu">
+                <a href="#" class="nav-link">Archives</a>
+                <a href="#" class="nav-link">Store</a>
                 <button class="quote-btn">Get a Quote</button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Let's Explore<br>New Possibilities...</h1>
+                <div class="search-container">
+                    <input type="text" placeholder="How to: info..." class="search-input">
+                    <button class="search-btn">Search</button>
+                </div>
+                <div class="tags">
+                    <span class="tag">Design</span>
+                    <span class="tag">Marketing</span>
+                    <span class="tag">Minimal</span>
+                </div>
+            </div>
+            <div class="hero-illustration">
+                <img src="group.png" alt="Illustration" class="hero-img">
             </div>
         </div>
-    </nav>
+    </section>
+
+    <!-- Latest Post Section -->
+    <section class="latest-post">
+        <div class="post-container">
+            <div class="post-image">
+                <img src="hand.png" alt="Latest post">
+            </div>
+            <div class="post-content">
+                <h2>Latest post heading sample tex..</h2>
+                <p class="post-meta">By Writer Name • 23 Dec</p>
+                <p class="post-excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Posts -->
+    <section class="related-posts">
+        <div class="posts-grid">
+            <div class="post-card">
+                <img src="bulb.png" alt="Post">
+                <div class="card-content">
+                    <h3>Other post heading sample tex..</h3>
+                    <p class="post-meta">By Writer Name • 23 Dec</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+            </div>
+            <div class="post-card">
+                <img src="bulb.png" alt="Post">
+                <div class="card-content">
+                    <h3>Other post heading sample tex..</h3>
+                    <p class="post-meta">By Writer Name • 23 Dec</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+            </div>
+            <div class="post-card">
+                <img src="bulb.png" alt="Post">
+                <div class="card-content">
+                    <h3>Other post heading sample tex..</h3>
+                    <p class="post-meta">By Writer Name • 23 Dec</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- App Download Section -->
+    <section class="app-download">
+        <div class="download-content">
+            <div class="download-text">
+                <h2>Download<br>Otarea Educore App</h2>
+                <p>For non stop learning</p>
+                <button class="download-btn">Download now</button>
+            </div>
+            <div class="app-illustration">
+                <img src="lastimage.png" alt="App illustration" class="app-img">
+            </div>
+        </div>
+    </section>
 </body>
 </html>
