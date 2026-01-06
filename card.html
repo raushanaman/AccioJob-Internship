@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        .card {
+            width: 300px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            font-family: Arial, sans-serif;
+        }
+        
+        .image-sec {
+            width: 100%;
+            height: 200px;
+            overflow: hidden;
+        }
+        
+        /* .image-sec img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        } */
+         .image-sec img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+         }
+        
+        .desc {
+            padding: 15px;
+            background-color: #f9f9f9;
+        }
+        
+        button {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            background-color: #007BFF;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="image-sec">
+            <img src="hand.png" alt="Latest post">
+        </div>
+        <div class="desc">
+            <p>Lorem ipsum dolor sit.</p>
+            <span>By Writer Name • 23 Dec</span>
+        </div>
+        <button>click here.</button>
+    </div>
+</body>
+</html>
