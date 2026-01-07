@@ -369,3 +369,50 @@ body {
         gap: 20px;
     }
 }
+
+
+
+/* 📐 TASK REQUIREMENTS
+🔹 1. Main Container
+Width: 60%
+Center aligned
+Padding: 2rem
+🔹 2. Header
+Height: 15vh
+Font-size: 2rem
+Center aligned text
+🔹 3. Layout Section
+Is section ke andar Sidebar + Main Content ho.
+▶ Sidebar
+Width: 20%
+Height: 100vh
+Font-size: 1rem
+▶ Main Content
+Width: remaining space
+Padding: 1rem
+🔹 4. Cards Section (inside Main Content)
+3 cards ek row me
+Har card:
+Width: 25%
+Height: 30vh
+Padding: 1rem
+Bottom margin: 2em
+🔹 5. Image
+Card ke andar image ho
+Image width: 100%
+Height: auto
+🔹 6. Button
+Padding: 0.8rem 1.5rem
+Font-size: 1rem
+🔹 7. Footer
+Height: 10vh
+Font-size: 1rem
+Center aligned text
+🔹 8. Responsive Rule
+Screen width <768px:
+Container width 100%
+Sidebar hide ho
+Font-size 14px
+✅ Rules
+✔️ Sirf ye units use karne hain:
+%, px, em, rem, vh */
