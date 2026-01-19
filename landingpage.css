@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: #181717;
+}
+main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: antiquewhite;
+    
+}
+.nav-class{
+    width: 100%;
+    height: 10vh;
+    background-color: rgb(252, 242, 242);
+    display: flex;
+    align-items: center;
+    /* justify-content: space-around; */
+}
+#heading{
+    color: rgb(114, 92, 92);
+    font-size: 24px;
+    font-family:cursive;
+}
+#logo{
+    width: 150px;
+    height: 70px;
+}
+.icon{
+    width: 199px;
+    height: 70px;
+    display: flex;
+    margin-left: 40px;
+    justify-content:flex-start;
+    align-items: center;
+    background-color: rgb(253, 255, 253);
+}
+.links{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 30%;
+    margin-left: 20%;
+    /* background-color: black; */
+    font-size: 20px;
+    
+}
+.links a {
+    text-decoration: none;
+    color: rgb(30, 28, 28);
+}
+
+.btn{
+    margin-left: 240px;
+    width: 100px;
+    height: 40px;
+    border-radius: 15px;
+    border: none;
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+}
+.main-content{
+    width: 90%;
+    height: 90vh;
+    /* margin: auto; */
+    /* background-color: black; */
+    display: flex;
+    gap: 60px;
+}
+.text-section{
+    width: 55%;
+    height: 85%;
+    background-color: white;
+    box-sizing: border-box;
+    margin-top: 40px;
+    margin-left: 55px;
+    /* text-align: center; */
+
+}
+.text-section>p
+{
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 20px;
+    padding-left: 50px;
+
+}
+
+#content{
+    font-size: 98px;
+    font-weight: bold;
+    margin-top: 60px;
+    margin-left: 40px;
+}
+#content span{
+    color: blue;
+}
+
+.btn-section{
+    width: 550px;
+    height: 60px;
+    /* background-color: yellow; */
+    margin-left: 40px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+.btn1{
+    width: 100px;
+    height: 35px;
+    margin-left: 40px;
+    border-radius: 10px;
+    border: 2px solid blue;
+    color: white;
+}
+.shop-now{
+    background-color: blue;
+}
+.Contact{
+    color: blue;
+}
+.picture{
+    width:32%;
+    height: 85%;
+    background-color: red;
+    overflow: hidden;
+    margin-top: 40px;
+}
+picture img{
+     width: 100%;
+    height: 100%; 
+    object-fit: contain; 
+    display: block;
+}

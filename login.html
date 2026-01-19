@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Lamp Animation</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="main-container">
+        <div class="content-div">
+            <div class="lamp-section">
+                <div class="table-lamp">
+                    <img src="https://www.homesake.in/cdn/shop/files/81QsW6kUkFL.jpg?v=1765534764&width=713" alt="Table Lamp" class="lamp-image" id="lampImage">
+                    <div class="pull-wire" id="lampWire">
+                        <div class="wire-string"></div>
+                        <div class="wire-pull">PULL</div>
+                    </div>
+                    <div class="lamp-light" id="lampLight"></div>
+                </div>
+            </div>
+            
+            <div class="register-form" id="registerForm">
+                <h2>Register</h2>
+                <form>
+                    <div class="input-group">
+                        <input type="text" placeholder="Full Name" required>
+                    </div>
+                    <div class="input-group">
+                        <input type="email" placeholder="Email" required>
+                    </div>
+                    <div class="input-group">
+                        <input type="password" placeholder="Password" required>
+                    </div>
+                    <div class="input-group">
+                        <input type="password" placeholder="Confirm Password" required>
+                    </div>
+                    <button type="submit" class="register-btn">Register</button>
+                </form>
+                <p class="login-link">Already have an account? <a href="#">Login</a></p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const lampWire = document.getElementById('lampWire');
+        const lampLight = document.getElementById('lampLight');
+        const registerForm = document.getElementById('registerForm');
+        const lampImage = document.getElementById('lampImage');
+        const contentDiv = document.querySelector('.content-div');
+
+        lampWire.addEventListener('click', function() {
+            lampLight.classList.add('active');
+            registerForm.classList.add('show');
+            contentDiv.classList.add('glow');
+            lampImage.style.filter = 'brightness(1.2) contrast(1.5)';
+            this.style.transform = 'translateY(5px)';
+            setTimeout(() => {
+                this.style.transform = 'translateY(0)';
+            }, 200);
+        });
+    </script>
+</body>
+</html>
